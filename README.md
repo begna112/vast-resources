@@ -2,6 +2,26 @@
 
 This repository gathers my own maintenance utilities, configuration snippets, and quality-of-life helpers for Vast hosts. Use these resources to streamline day-to-day upkeep, diagnose hardware, and keep rigs efficient.
 
+## Usage
+
+### Running the Scripts
+Make the scripts executable once after cloning if needed:
+```bash
+sudo apt install git
+git clone https://github.com/begna112/vast-resources.git
+cd vast-resources
+sudo chmod +x scripts/*.sh
+```
+Then run the command found below for the script you want. 
+
+### Updating the Scripts
+
+```bash
+cd vast-resources
+git pull
+sudo chmod +x scripts/*.sh
+```
+
 ## Scripts
 
 ### scripts/pcie-inventory.sh
@@ -21,12 +41,6 @@ This repository gathers my own maintenance utilities, configuration snippets, an
   sudo ./scripts/ram-inventory.sh
   ```
 - Outputs an auto-sized table; unpopulated slots are skipped, and a helpful hint is shown when SMBIOS data is unavailable.
-
-### Running the Scripts
-Make the scripts executable once after cloning if needed:
-```bash
-chmod +x scripts/*.sh
-```
 
 ## Related Resources
 
